@@ -1,0 +1,20 @@
+<!--player.wxml-->
+<view class="container">
+  <view class="back_section" style="background: url('{{player_info.picUrl}}');background-size: cover;"></view>
+  <view class="section">
+    <image src="{{player_info.picUrl}}" mode="scaleToFill"  bindtap="handlePlayBtnTap"></image>
+  </view>
+  <view class="operations">
+    <icon type="String" />
+  </view>
+  <view class="time_area">
+    <text class="time_stamp">{{player_info.progress_time}}</text>
+    <view class="progress">
+      <view class="block" style="left:{{player_info.progress_value*2.24-6+'px'}}"></view>
+      <view class="line">
+        <progress stroke-width="2" activeColor="#fff" backgroundColor="#666" percent="{{player_info.progress_value}}" />
+      </view>
+    </view>
+    <text class="time_stamp">{{player_info.duration}}</text>    
+  </view>
+</view>

@@ -1,0 +1,64 @@
+/* player.wxss */
+page{
+  background: #000;
+  background-image: none;
+}
+.container{
+  position: relative;
+  height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.back_section{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2
+}
+.section{
+  margin-top: 100rpx;
+  width: 600rpx;
+  height: 600rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  align-self: center;
+  animation: imgRotate 30s linear infinite running;
+}
+.section image{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@keyframes imgRotate{
+  from {transform: rotate(0deg)}
+  to {transform: rotate(360deg)}
+}
+.time_area{
+  display: flex;
+  justify-content: space-around;
+  line-height: 12px;
+  margin-top: 40rpx;  
+}
+.time_stamp{
+  color: #fff;
+  font-size: 24rpx;
+}
+.progress{
+  height: 12px;
+  width: 224px;
+  position: relative;
+}
+.line{
+  width: 100%;
+  padding: 5px 0;
+}
+.block{
+  width: 12px;
+  height: 12px;
+  top: 0;
+  left: -6px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;  
+}

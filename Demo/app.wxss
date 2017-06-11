@@ -1,0 +1,16 @@
+/**app.wxss**/
+page{
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496596050073&di=8218487382c647b88eec94541abe104e&imgtype=0&src=http%3A%2F%2Fi3.topit.me%2F3%2Fab%2Fa8%2F1103173469ceea8ab3l.jpg');
+  background-size: 110% 100%;
+}
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} */

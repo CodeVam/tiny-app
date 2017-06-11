@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="section">
+    <input class="search" placeholder="搜索" confirm-type="search" bindconfirm="handleSearch"/>
+  </view>
+   <scroll-view wx:if="{{display}}" class="list_box" scroll-y >
+    <view wx:for="{{songs}}" wx:key="{{index}}" id="{{item.id}}" data-_audio="{{item.audio}}" data-_pic="{{item.album.picUrl}}" class="list_item" bindtap="handleTap">
+      <view class="album_pic">
+        <image src="{{item.album.picUrl}}" mode="aspectFit" style="width: 100%;height:100%" ></image>
+      </view>
+      <view class="song_info">
+        <view class="song_name">{{item.name}}</view>
+        <view class="artists_name">
+          <text wx:for="{{item.artists}}" wx:for-item="it" wx:for-index="idx" wx:key="{{idx}}">
+            <text wx:if="{{idx+1==item.artists.length}}">{{it.name}}</text>
+            <text wx:else>{{it.name+'/'}}</text>
+          </text> - {{item.album.name}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
