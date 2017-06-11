@@ -1,0 +1,23 @@
+{
+  "name": "tiny-app",
+  "version": "1.0.0",
+  "description": "微信小程序",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeVam/tiny-app.git"
+  },
+  "keywords": [
+    "微信",
+    "小程序"
+  ],
+  "author": "CodeVam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeVam/tiny-app/issues"
+  },
+  "homepage": "https://github.com/CodeVam/tiny-app#readme"
+}
